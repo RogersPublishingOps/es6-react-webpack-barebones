@@ -3,38 +3,65 @@
  */
 import React from 'react'
 /**
- * @function Home
- * @constructor
+ * @class Home
  *
- * @desc When constructed instantiates a series of elements that build out to
+ * @classdesc When constructed instantiates a series of elements that build out to
  * a simple counter. The count is held in a state object which is accessed by
  * other methods. When the state object is altered, the UI element containing
- * a visual representation of the state is updated. This is all done explicitly
- * in this function.
+ * a visual representation of the state is updated.
  */
 class Home extends React.Component {
+    /** @constructor */
     constructor(props) {
+        /**
+         * Must be called to inherit properties and methods from
+         * the parent class.
+         */
         super(props);
 
+        /** Appears in our H1 tag below. */
         this.greeting = 'Hello, World!';
+
+        /** The count referenced in the DOM */
         this.state = { count: 0 };
 
+        /**
+         * Bind `this` to the methods used in the DOM so we
+         * don't have to inline them.
+         */
         this.increaseCount = this.increaseCount.bind(this);
         this.decreaseCount = this.decreaseCount.bind(this);
     }
 
-    increaseCount() {
+    /**
+     * @method increaseCount
+     * @param e<Event> - Native event object.
+     * @desc Increases the count state by 1.
+     * @returns void
+     */
+    increaseCount(e) {
         this.setState({
             count: this.state.count + 1
         });
     }
 
-    decreaseCount() {
+    /**
+     * @method decreaseCount
+     * @param e<Event> - Native event object.
+     * @desc Decreases the count state by 1.
+     * @returns void
+     */
+    decreaseCount(e) {
         this.setState({
             count: this.state.count - 1
         });
     }
 
+    /**
+     * @method render
+     * @desc Inherited React component function. Renders the JSX DOM elements.
+     * @returns HTMLElement
+     */
     render() {
         return (
             <div className="counter">
