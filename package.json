@@ -1,0 +1,40 @@
+{
+  "name": "es6-react-webpack-barebones",
+  "version": "1.0.0",
+  "description": "A bare-bones ES6 React starter using Webpack as an application bundler.",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/.bin/http-server -p 1234",
+    "start:dev": "./node_modules/.bin/webpack-dev-server --mode development",
+    "prebuild": "npm test",
+    "build": "./node_modules/.bin/webpack --mode production",
+    "build:dev": "./node_modules/.bin/webpack --mode development",
+    "watch": "./node_modules/.bin/webpack --watch --mode development",
+    "test": "./node_modules/.bin/mocha --harmony --require jsdom-global/register --require babel-register"
+  },
+  "author": "Robert Fairley <robert.fairley@rci.rogers.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "chai": "^4.1.2",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.18.2",
+    "eslint-plugin-react": "^7.7.0",
+    "http-server": "^0.11.1",
+    "jsdom": "^11.6.2",
+    "jsdom-global": "^3.0.2",
+    "mocha": "^5.0.4",
+    "progress-bar-webpack-plugin": "^1.11.0",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.11",
+    "webpack-dev-server": "^3.1.1"
+  },
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}

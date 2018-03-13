@@ -1,0 +1,10 @@
+# Ignore these files
+
+### Node
+/node_modules/
+
+### Application
+/public/app.js
+
+### Common
+.DS_Store
