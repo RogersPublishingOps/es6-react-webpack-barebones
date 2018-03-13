@@ -1,6 +1,6 @@
-# ES6 Webpack Barebones
+# ES6 React Webpack Barebones
 
-A bare-bones ES6 starter using Webpack as an application bundler.
+A bare-bones ES6 React starter using Webpack as an application bundler.
 
 ### Setup
 
