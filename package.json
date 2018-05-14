@@ -1,7 +1,7 @@
 {
-  "name": "es6-react-webpack-barebones",
-  "version": "1.0.0",
-  "description": "A bare-bones ES6 React starter using Webpack as an application bundler.",
+  "name": "redirection-test",
+  "version": "0.1.0",
+  "description": "Redirection test tool for Webproducers.",
   "main": "index.js",
   "scripts": {
     "start": "./node_modules/.bin/http-server -p 1234",
@@ -12,7 +12,7 @@
     "watch": "./node_modules/.bin/webpack --watch --mode development",
     "test": "./node_modules/.bin/mocha --harmony --require jsdom-global/register --require babel-register"
   },
-  "author": "Robert Fairley <robert.fairley@rci.rogers.com>",
+  "author": "Frederik Dussault <frederik.dussault@rci.rogers.com>",
   "license": "MIT",
   "devDependencies": {
     "@babel/core": "^7.0.0-beta.40",
